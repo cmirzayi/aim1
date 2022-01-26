@@ -36,10 +36,10 @@ longRand <- sample(nrow(longStudies))
 long <- longStudies[longRand,]
 
 animalRand <- sample(nrow(animalStudies))
-animal <- csStudies[animalRand,]
+animal <- animalStudies[animalRand,]
 
 rctRand <- sample(nrow(rctStudies))
-rct <- csStudies[rctRand,]
+rct <- rctStudies[rctRand,]
 
 write.csv(cs, "cross-sectional studies randomized.csv")
 write.csv(long, "longitudinal studies randomized.csv")
